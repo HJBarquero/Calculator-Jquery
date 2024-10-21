@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600&display=swap">
+    <script src="https://kit.fontawesome.com/fb3add99c5.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calc.css">
+
+</head>
+
+<body>
+    <div class="calc_container">
+        <div class="calc_screen" id="calcText"></div>
+
+        <div class="calc_btns">
+
+            <button class="C" onclick="clearText()">C</button>
+            <button class="delete" onclick="deletebtn()"><i class="fa-solid fa-arrow-right-long"></i></button>
+            <button class="divide" onclick="operation('/')">/</button>
+            <button class="multi" onclick="operation('*')">*</button>
+            <button class="numbers" onclick="editText('7')">7</button>
+            <button class="numbers" onclick="editText('8')">8</button>
+            <button class="numbers" onclick="editText('9')">9</button>
+            <button class="substract" onclick="operation('-')">-</button>
+            <button class="numbers" onclick="editText('4')">4</button>
+            <button class="numbers" onclick="editText('5')">5</button>
+            <button class="numbers" onclick="editText('6')">6</button>
+            <button class="add" onclick="operation('+')">+</button>
+            <button class="numbers" onclick="editText('1')">1</button>
+            <button class="numbers" onclick="editText('2')">2</button>
+            <button class="numbers" onclick="editText('3')">3</button>
+            <button class="equal" onclick="operation('=')">=</button>
+            <button class="zero" onclick="editText('0')">0</button>
+            <button id="point" onclick="editText('.')">.</button>
+
+
+
+        </div>
+
+    </div>
+
+    <script src='Calc.js'>
+
+    </script>
+
+</body>
+
+</html>
